@@ -1,104 +1,390 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Café Aurora — café, aconchego e bons momentos.">
-  <title>Café Aurora | Um lugar para desacelerar</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="site-header">
-    <a class="logo" href="#inicio" aria-label="Café Aurora — início">
-      <span class="logo-mark" aria-hidden="true">☕</span>
-      <span>Café <strong>Aurora</strong></span>
-    </a>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-principal">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="nav-principal" class="nav-principal" aria-label="Navegação principal">
-      <a href="#sobre">Nossa essência</a>
-      <a href="#cardapio">Cardápio</a>
-      <a href="#horarios">Horários</a>
-      <a class="nav-cta" href="#contato">Fale conosco</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café Aurora — cafeterias premium com café, churros e combinações exclusivas para recarregar seu universo."
+    />
+    <title>Café Aurora | Recarregue seu universo.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-lockup" href="#inicio" aria-label="Café Aurora — início">
+        <span class="brand-emblem emblem-small" aria-hidden="true">
+          <span class="petal p1"></span>
+          <span class="petal p2"></span>
+          <span class="petal p3"></span>
+          <span class="petal p4"></span>
+          <span class="petal p5"></span>
+          <span class="petal p6"></span>
+          <span class="petal p7"></span>
+          <span class="petal p8"></span>
+          <span class="flower-core"></span>
+        </span>
+        <span class="brand-wordmark" aria-label="Café Aurora">
+          <span class="brand-line">Café</span>
+          <strong>Aurora</strong>
+        </span>
+      </a>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">CAFÉ FRESCO, MOMENTOS ESPECIAIS</p>
-        <h1>Seu momento de<br><span>calma começa aqui.</span></h1>
-        <p class="hero-text">Aroma de café recém-passado, sabores feitos com carinho e um cantinho acolhedor para chamar de seu.</p>
-        <a class="button button-gold" href="#cardapio">Conheça nosso cardápio <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-art" aria-label="Ilustração decorativa de uma xícara de café" role="img">
-        <div class="sun"></div>
-        <div class="steam steam-one"></div><div class="steam steam-two"></div><div class="steam steam-three"></div>
-        <div class="cup"><div class="coffee"></div></div>
-        <div class="saucer"></div>
-        <div class="bean bean-one"></div><div class="bean bean-two"></div><div class="bean bean-three"></div>
-        <span class="art-caption">feito com afeto</span>
-      </div>
-      <a class="scroll-cue" href="#sobre">DESCUBRA <span aria-hidden="true">↓</span></a>
-    </section>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <section id="sobre" class="section about">
-      <div class="section-kicker">01 — NOSSA ESSÊNCIA</div>
-      <div class="about-copy">
-        <h2>Mais que café.<br><span>Um respiro no dia.</span></h2>
-        <p>No Café Aurora, acreditamos que as melhores coisas acontecem sem pressa. Criamos um espaço fictício onde cada xícara convida você a pausar, conversar e apreciar os pequenos prazeres.</p>
-        <p>Do primeiro aroma da manhã à última conversa da tarde, tem sempre um lugar à sua espera.</p>
-      </div>
-      <div class="about-note"><span class="quote-mark">“</span><p>Todo dia merece<br>um começo bonito.</p><span class="note-line"></span></div>
-    </section>
+      <nav id="nav-principal" class="nav-principal" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cafes">Cafés</a>
+        <a href="#churros">Churros</a>
+        <a href="#combo-builder">Monte seu Combo</a>
+        <a href="#queridinhos">Queridinhos da Semana</a>
+        <a href="#identidade">Nossa Identidade</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="#combo-builder">Monte seu combo</a>
+      </nav>
+    </header>
 
-    <section id="cardapio" class="section menu-section">
-      <div class="section-heading">
-        <div><div class="section-kicker">02 — FEITO NA HORA</div><h2>Pequenos <span>prazeres</span></h2></div>
-        <p>Uma seleção especial para deixar seu dia mais gostoso.</p>
-      </div>
-      <div class="products">
-        <article class="product-card">
-          <div class="product-visual visual-espresso"><span class="product-number">01</span><span class="product-emoji" aria-hidden="true">☕</span></div>
-          <div class="product-info"><div class="product-title"><h3>Aurora Espresso</h3><span class="price">R$ 8,00</span></div><p>Intenso, encorpado e com notas suaves de chocolate.</p><span class="product-tag">O clássico</span></div>
-        </article>
-        <article class="product-card featured">
-          <div class="product-visual visual-latte"><span class="product-number">02</span><span class="product-emoji" aria-hidden="true">🥛</span></div>
-          <div class="product-info"><div class="product-title"><h3>Latte Dourado</h3><span class="price">R$ 13,00</span></div><p>Espresso aveludado com leite cremoso e arte na espuma.</p><span class="product-tag">Favorito da casa</span></div>
-        </article>
-        <article class="product-card">
-          <div class="product-visual visual-cake"><span class="product-number">03</span><span class="product-emoji" aria-hidden="true">🍰</span></div>
-          <div class="product-info"><div class="product-title"><h3>Bolo de Canela</h3><span class="price">R$ 10,00</span></div><p>Fatia fofinha, aroma de especiarias e gostinho de casa.</p><span class="product-tag">Feito com carinho</span></div>
-        </article>
-      </div>
-      <p class="menu-disclaimer">Cardápio e preços ilustrativos, criados para este projeto fictício.</p>
-    </section>
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Recarregue seu universo.</p>
+          <h1>Seu próximo nível começa aqui.</h1>
+          <p class="hero-text">
+            Seu próximo nível começa aqui. Cafés intensos, bebidas geladas, churros irresistíveis e combinações criadas para recarregar sua energia.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#cafes">Explorar o cardápio</a>
+            <a class="btn btn-secondary" href="#combo-builder">Montar meu combo</a>
+          </div>
+          <div class="hero-badges" aria-label="Destaques da marca">
+            <span>☕ Café premium</span>
+            <span>✨ Churros artesanais</span>
+            <span>⚡ Energia solar</span>
+          </div>
+        </div>
 
-    <section id="horarios" class="hours-section">
-      <div class="hours-decoration" aria-hidden="true">✳</div>
-      <div class="hours-copy"><div class="section-kicker">03 — NO SEU TEMPO</div><h2>Portas abertas<br><span>para você.</span></h2><p>Reserve um intervalo na rotina e venha aproveitar um café quentinho.</p></div>
-      <div class="hours-card">
-        <div class="hours-row"><span>Segunda a sexta</span><strong>08h – 19h</strong></div>
-        <div class="hours-row"><span>Sábados</span><strong>09h – 18h</strong></div>
-        <div class="hours-row"><span>Domingos e feriados</span><strong>09h – 14h</strong></div>
-        <p><span class="status-dot"></span> Horários ilustrativos</p>
+        <div class="hero-visual" aria-label="Café gelado e churros em composição de campanha" role="img">
+          <div class="hero-photo-frame">
+            <img
+              src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=900&q=80"
+              alt="Café gelado com cubos de gelo em um copo e churros em destaque"
+            />
+          </div>
+          <div class="floating-card floating-card-top">
+            <span class="mini-label">Novidade</span>
+            <strong>Galaxy Mocha</strong>
+            <small>Chocolate + café + creme</small>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <span class="mini-label">Mais pedido</span>
+            <strong>Combo solar</strong>
+            <small>R$ 19,90</small>
+          </div>
+          <div class="brand-emblem emblem-hero" aria-hidden="true">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal p7"></span>
+            <span class="petal p8"></span>
+            <span class="flower-core"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="identity-teaser">
+        <div class="identity-pill">
+          <span class="star-dot"></span>
+          Cultura geek com sabor premium
+        </div>
+      </section>
+
+      <section id="cafes" class="menu-section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow eyebrow-dark">02 · Cafés</p>
+            <h2>Energia em cada dose.</h2>
+          </div>
+          <p>Seleção exclusiva de cafés quentes e gelados com identidade própria.</p>
+        </div>
+
+        <div class="filter-group" aria-label="Filtros do cardápio">
+          <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+          <button class="filter-btn" type="button" data-filter="quente">Quentes</button>
+          <button class="filter-btn" type="button" data-filter="gelado">Gelados</button>
+        </div>
+
+        <div id="menu-grid" class="menu-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="churros" class="churros-section">
+        <div class="section-header section-header-compact">
+          <div>
+            <p class="eyebrow eyebrow-dark">03 · Churros</p>
+            <h2>Doçura com brilho de estrela.</h2>
+          </div>
+          <p>Texturas crocantes, recheios intensos e o toque especial da casa.</p>
+        </div>
+        <div id="churro-grid" class="churro-grid"></div>
+      </section>
+
+      <section id="combo-builder" class="combo-builder">
+        <div class="section-header section-header-compact">
+          <div>
+            <p class="eyebrow eyebrow-dark">04 · Combo</p>
+            <h2>Monte seu combo.</h2>
+          </div>
+          <p>Combine cafés, sobremesas e sabores para criar o momento perfeito.</p>
+        </div>
+
+        <div class="builder-layout">
+          <div class="builder-panel">
+            <div class="selector-block">
+              <h3>Cafés</h3>
+              <div id="coffee-selector" class="selector-grid"></div>
+            </div>
+
+            <div class="selector-block">
+              <h3>Churros e sobremesas</h3>
+              <div id="dessert-selector" class="selector-grid"></div>
+            </div>
+
+            <div class="selector-block promo-block">
+              <h3>Combos promocionais</h3>
+              <div id="promo-list" class="promo-list"></div>
+            </div>
+          </div>
+
+          <aside class="summary-panel" aria-live="polite">
+            <div class="summary-top">
+              <div>
+                <p class="eyebrow eyebrow-dark">Resumo</p>
+                <h3>Seu pedido</h3>
+              </div>
+              <span id="item-counter" class="item-counter">0 itens</span>
+            </div>
+
+            <div id="combo-items" class="combo-items"></div>
+
+            <div class="totals">
+              <div class="total-row">
+                <span>Subtotal</span>
+                <strong id="subtotal-value">R$ 0,00</strong>
+              </div>
+              <div class="total-row total-row-highlight">
+                <span>Total</span>
+                <strong id="total-value">R$ 0,00</strong>
+              </div>
+            </div>
+
+            <div class="summary-actions">
+              <button id="clear-combo" class="btn btn-tertiary" type="button">Limpar combo</button>
+              <button id="finish-order" class="btn btn-primary" type="button">Finalizar pedido</button>
+            </div>
+
+            <div id="checkout-output" class="checkout-output" aria-live="polite"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="queridinhos" class="favorites-section">
+        <div class="section-header section-header-compact">
+          <div>
+            <p class="eyebrow eyebrow-dark">05 · Queridinhos</p>
+            <h2>Favoritos da semana.</h2>
+          </div>
+          <p>Os sabores que mais conquistaram a nossa galáxia esta semana.</p>
+        </div>
+        <div id="favorites-grid" class="favorites-grid"></div>
+      </section>
+
+      <section id="identidade" class="identity-section">
+        <div class="section-header section-header-compact">
+          <div>
+            <p class="eyebrow eyebrow-dark">06 · Nossa Identidade</p>
+            <h2>Uma marca feita para ser sentida.</h2>
+          </div>
+          <p>O girassol premium da Aurora em embalagens, copos e materiais de campanha.</p>
+        </div>
+
+        <div class="mockup-grid">
+          <article class="mockup-card cup-hot">
+            <div class="mockup-label">Copo quentinho</div>
+            <div class="cup-mockup">
+              <div class="cup-body">
+                <span class="cup-logo">A</span>
+              </div>
+              <div class="cup-lid"></div>
+            </div>
+          </article>
+
+          <article class="mockup-card cup-cold">
+            <div class="mockup-label">Bebida gelada</div>
+            <div class="cold-cup">
+              <div class="cold-cup-top"></div>
+              <div class="cold-cup-body">
+                <span class="cup-logo">A</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="mockup-card bag-paper">
+            <div class="mockup-label">Sacola kraft</div>
+            <div class="paper-bag">
+              <div class="bag-brand">
+                <span class="mini-disc"></span>
+                CAFÉ AURORA
+              </div>
+            </div>
+          </article>
+
+          <article class="mockup-card box-card">
+            <div class="mockup-label">Caixa de churros</div>
+            <div class="churro-box">
+              <div class="box-top"></div>
+              <div class="box-brand">AURORA</div>
+            </div>
+          </article>
+
+          <article class="mockup-card sticker-card">
+            <div class="mockup-label">Adesivos</div>
+            <div class="sticker">
+              <div class="sticker-mark"></div>
+              <span>Café Aurora</span>
+            </div>
+          </article>
+
+          <article class="mockup-card napkin-card">
+            <div class="mockup-label">Guardanapo</div>
+            <div class="napkin">
+              <div class="napkin-mark"></div>
+              <span>recarregue seu universo</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="contact-section">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-dark">07 · Contato</p>
+          <h2>Nosso espaço está pronto para receber o seu próximo ritual.</h2>
+          <p>
+            Dúvidas, sugestões ou uma vontade irresistível de falar sobre café? Este é um formulário demonstrativo e não envia dados reais.
+          </p>
+
+          <div class="contact-detail">
+            <span aria-hidden="true">✉</span>
+            <div>
+              <small>E-mail demonstrativo</small>
+              <strong>ola@cafeaurora.example</strong>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span aria-hidden="true">⌂</span>
+            <div>
+              <small>Endereço exemplo</small>
+              <strong>Rua das Estrelas, 142 — Aurora City</strong>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span aria-hidden="true">☎</span>
+            <div>
+              <small>Telefone demonstrativo</small>
+              <strong>(11) 5555-2024</strong>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field-group">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Como podemos chamar você?" required />
+          </div>
+
+          <div class="field-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Conte sua ideia, dúvida ou vontade de tomar um café..." required></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Enviar mensagem</button>
+          <p id="form-feedback" class="form-feedback" role="status" aria-live="polite">
+            Este formulário é uma demonstração e não envia dados para um servidor real.
+          </p>
+        </form>
+      </section>
+
+      <section class="hours-section" id="horarios">
+        <div class="hours-copy">
+          <p class="eyebrow eyebrow-dark">08 · Horários</p>
+          <h2>Abra a rotina e venha recarregar.</h2>
+          <p>Ambiente com clima de café premium, música boa e energia boa para o dia inteiro.</p>
+        </div>
+
+        <div class="hours-card">
+          <div class="hours-row">
+            <span>Segunda a sexta</span>
+            <strong>08h às 20h</strong>
+          </div>
+          <div class="hours-row">
+            <span>Sábado</span>
+            <strong>09h às 22h</strong>
+          </div>
+          <div class="hours-row">
+            <span>Domingo</span>
+            <strong>09h às 18h</strong>
+          </div>
+          <p class="hours-note"><span class="status-dot"></span> Horários fictícios para demonstração do projeto.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-emblem emblem-small" aria-hidden="true">
+          <span class="petal p1"></span>
+          <span class="petal p2"></span>
+          <span class="petal p3"></span>
+          <span class="petal p4"></span>
+          <span class="petal p5"></span>
+          <span class="petal p6"></span>
+          <span class="petal p7"></span>
+          <span class="petal p8"></span>
+          <span class="flower-core"></span>
+        </span>
+        <div>
+          <strong>Café Aurora</strong>
+          <span>Recarregue seu universo.</span>
+        </div>
       </div>
-    </section>
 
-    <section id="contato" class="section contact-section">
-      <div class="contact-copy"><div class="section-kicker">04 — VAMOS CONVERSAR</div><h2>Seu próximo café<br>pode ser <span>com a gente.</span></h2><p>Dúvidas, sugestões ou só vontade de dizer oi? Envie uma mensagem pelo formulário demonstrativo.</p><div class="contact-detail"><span aria-hidden="true">✉</span><div><small>E-MAIL FICTÍCIO</small><strong>ola@cafeaurora.example</strong></div></div><div class="contact-detail"><span aria-hidden="true">⌖</span><div><small>ENDEREÇO ILUSTRATIVO</small><strong>Rua das Flores, 123 — Cidade Imaginária</strong></div></div></div>
-      <form id="contact-form" class="contact-form">
-        <label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Como podemos chamar você?" required>
-        <label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
-        <label for="message">Mensagem</label><textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
-        <button class="button button-dark" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button>
-        <p id="form-feedback" class="form-feedback" role="status" aria-live="polite">Este formulário é demonstrativo e não envia dados.</p>
-      </form>
-    </section>
-  </main>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#cafes">Cafés</a>
+        <a href="#churros">Churros</a>
+        <a href="#combo-builder">Combos</a>
+        <a href="#contato">Contato</a>
+      </nav>
 
-  <footer class="site-footer"><a class="logo footer-logo" href="#inicio"><span class="logo-mark" aria-hidden="true">☕</span><span>Café <strong>Aurora</strong></span></a><p>Feito com calma, servido com carinho.</p><span class="copyright">© <span id="year"></span> Café Aurora · Projeto fictício</span></footer>
-</body>
+      <div class="footer-hours">
+        <p>Segunda a sexta: 08h às 20h</p>
+        <p>Sábado: 09h às 22h</p>
+        <p>Domingo: 09h às 18h</p>
+        <p>© <span id="year"></span> Café Aurora · Demo</p>
+      </div>
+    </footer>
+  </body>
 </html>
