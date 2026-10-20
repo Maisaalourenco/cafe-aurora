@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Aurora — café, aconchego e bons momentos.">
+  <title>Café Aurora | Um lugar para desacelerar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Café Aurora — início">
+      <span class="logo-mark" aria-hidden="true">☕</span>
+      <span>Café <strong>Aurora</strong></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-principal">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-principal" class="nav-principal" aria-label="Navegação principal">
+      <a href="#sobre">Nossa essência</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#horarios">Horários</a>
+      <a class="nav-cta" href="#contato">Fale conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">CAFÉ FRESCO, MOMENTOS ESPECIAIS</p>
+        <h1>Seu momento de<br><span>calma começa aqui.</span></h1>
+        <p class="hero-text">Aroma de café recém-passado, sabores feitos com carinho e um cantinho acolhedor para chamar de seu.</p>
+        <a class="button button-gold" href="#cardapio">Conheça nosso cardápio <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa de uma xícara de café" role="img">
+        <div class="sun"></div>
+        <div class="steam steam-one"></div><div class="steam steam-two"></div><div class="steam steam-three"></div>
+        <div class="cup"><div class="coffee"></div></div>
+        <div class="saucer"></div>
+        <div class="bean bean-one"></div><div class="bean bean-two"></div><div class="bean bean-three"></div>
+        <span class="art-caption">feito com afeto</span>
+      </div>
+      <a class="scroll-cue" href="#sobre">DESCUBRA <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="section-kicker">01 — NOSSA ESSÊNCIA</div>
+      <div class="about-copy">
+        <h2>Mais que café.<br><span>Um respiro no dia.</span></h2>
+        <p>No Café Aurora, acreditamos que as melhores coisas acontecem sem pressa. Criamos um espaço fictício onde cada xícara convida você a pausar, conversar e apreciar os pequenos prazeres.</p>
+        <p>Do primeiro aroma da manhã à última conversa da tarde, tem sempre um lugar à sua espera.</p>
+      </div>
+      <div class="about-note"><span class="quote-mark">“</span><p>Todo dia merece<br>um começo bonito.</p><span class="note-line"></span></div>
+    </section>
+
+    <section id="cardapio" class="section menu-section">
+      <div class="section-heading">
+        <div><div class="section-kicker">02 — FEITO NA HORA</div><h2>Pequenos <span>prazeres</span></h2></div>
+        <p>Uma seleção especial para deixar seu dia mais gostoso.</p>
+      </div>
+      <div class="products">
+        <article class="product-card">
+          <div class="product-visual visual-espresso"><span class="product-number">01</span><span class="product-emoji" aria-hidden="true">☕</span></div>
+          <div class="product-info"><div class="product-title"><h3>Aurora Espresso</h3><span class="price">R$ 8,00</span></div><p>Intenso, encorpado e com notas suaves de chocolate.</p><span class="product-tag">O clássico</span></div>
+        </article>
+        <article class="product-card featured">
+          <div class="product-visual visual-latte"><span class="product-number">02</span><span class="product-emoji" aria-hidden="true">🥛</span></div>
+          <div class="product-info"><div class="product-title"><h3>Latte Dourado</h3><span class="price">R$ 13,00</span></div><p>Espresso aveludado com leite cremoso e arte na espuma.</p><span class="product-tag">Favorito da casa</span></div>
+        </article>
+        <article class="product-card">
+          <div class="product-visual visual-cake"><span class="product-number">03</span><span class="product-emoji" aria-hidden="true">🍰</span></div>
+          <div class="product-info"><div class="product-title"><h3>Bolo de Canela</h3><span class="price">R$ 10,00</span></div><p>Fatia fofinha, aroma de especiarias e gostinho de casa.</p><span class="product-tag">Feito com carinho</span></div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">Cardápio e preços ilustrativos, criados para este projeto fictício.</p>
+    </section>
+
+    <section id="horarios" class="hours-section">
+      <div class="hours-decoration" aria-hidden="true">✳</div>
+      <div class="hours-copy"><div class="section-kicker">03 — NO SEU TEMPO</div><h2>Portas abertas<br><span>para você.</span></h2><p>Reserve um intervalo na rotina e venha aproveitar um café quentinho.</p></div>
+      <div class="hours-card">
+        <div class="hours-row"><span>Segunda a sexta</span><strong>08h – 19h</strong></div>
+        <div class="hours-row"><span>Sábados</span><strong>09h – 18h</strong></div>
+        <div class="hours-row"><span>Domingos e feriados</span><strong>09h – 14h</strong></div>
+        <p><span class="status-dot"></span> Horários ilustrativos</p>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="contact-copy"><div class="section-kicker">04 — VAMOS CONVERSAR</div><h2>Seu próximo café<br>pode ser <span>com a gente.</span></h2><p>Dúvidas, sugestões ou só vontade de dizer oi? Envie uma mensagem pelo formulário demonstrativo.</p><div class="contact-detail"><span aria-hidden="true">✉</span><div><small>E-MAIL FICTÍCIO</small><strong>ola@cafeaurora.example</strong></div></div><div class="contact-detail"><span aria-hidden="true">⌖</span><div><small>ENDEREÇO ILUSTRATIVO</small><strong>Rua das Flores, 123 — Cidade Imaginária</strong></div></div></div>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Como podemos chamar você?" required>
+        <label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+        <label for="message">Mensagem</label><textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+        <button class="button button-dark" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button>
+        <p id="form-feedback" class="form-feedback" role="status" aria-live="polite">Este formulário é demonstrativo e não envia dados.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="logo footer-logo" href="#inicio"><span class="logo-mark" aria-hidden="true">☕</span><span>Café <strong>Aurora</strong></span></a><p>Feito com calma, servido com carinho.</p><span class="copyright">© <span id="year"></span> Café Aurora · Projeto fictício</span></footer>
+</body>
+</html>
